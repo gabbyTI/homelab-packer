@@ -1,0 +1,32 @@
+# Packer build artifacts
+*.pkrvars.hcl
+*.pkr.hcl.lock
+packer_cache/
+output-*
+
+# Cloud-init user data files (if containing sensitive info)
+http/user-data
+http/meta-data
+http/network-config
+
+# SSH keys (DO NOT COMMIT PRIVATE KEYS)
+*.pem
+*.pub
+id_rsa
+id_rsa.pub
+
+# Credentials & Secrets
+credentials.pkr.hcl
+secrets.pkr.hcl
+*.tfstate
+*.tfstate.backup
+
+# Logs
+*.log
+packer.log
+
+# Temporary files
+.DS_Store
+Thumbs.db
+
+.vscode
